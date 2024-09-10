@@ -1,0 +1,109 @@
+/* Container for the entire smart ticket application */
+.smart-ticket-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Header section styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #083270;
+  color: white;
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px;
+  
+}
+
+/* Title styling */
+.header h2 {
+  margin: 0;
+  font-size: 1.8em;
+  color: white;
+}
+
+/* User information styling */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info span {
+  margin: 3rem;
+  font-size: 1em;
+}
+
+.user-info button {
+  background-color: white;
+  margin-top: 0.2rem;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 8px;
+  
+}
+
+/* For devices with a width up to 600px (e.g., smaller phones) */
+
+
+/* For devices with width between 600px and 1024px (e.g., tablets and small desktops) */
+@media (min-width: 430px) and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0.5px;
+  }
+
+  .header h5 {
+    margin: 1rem;
+    
+  }
+
+  .container {
+    background-color: #000000;
+  }
+
+  .info-section {
+    margin: 2rem;
+  }
+
+  .user-info {
+    gap: 10px;
+  }
+
+  .user-info span {
+    font-size: 1em;
+  }
+
+  .user-info button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .sidebar {
+    width: 50%; /* 50% for mobile view */
+  }
+
+  .top-navbar {
+    padding: 10px;
+  }
+
+  .menu-btn {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+/* Responsive Design */

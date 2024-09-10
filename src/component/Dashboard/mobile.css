@@ -1,0 +1,255 @@
+/* กำหนดขนาดและพื้นหลังหลักของฟอร์ม */
+.container-mobile {
+  max-width: 400px;
+  margin-top: -25px;
+  padding: 1rem;
+  background-color: #940101;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 59, 59, 0.1);
+}
+
+/* สไตล์หัวข้อ */
+.details h4 {
+  text-align: center;
+  color: #08366e;
+  margin-top: -25px;
+}
+
+/* จัดการฟอร์มให้เหมือนในรูป */
+.info-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.info-row {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ข้อความ label ของข้อมูล */
+.info-row strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* สไตล์ของ input และ select */
+input, select {
+  width: 65%;
+  padding: 8px;
+  border: 1px solid #847676;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* ปุ่มยกเลิกและบันทึก */
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -25px;
+}
+
+button.btn {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 80px;
+}
+
+/* ปุ่มยกเลิกสีแดง */
+#red {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+#red:hover {
+  background-color: #ff3333;
+}
+
+/* ปุ่มบันทึกสีน้ำเงิน */
+#blue {
+  background-color: #007bff;
+  color: white;
+}
+
+#blue:hover {
+  background-color: #7da2c9;
+}
+
+/* สไตล์ของ footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+.footer h3 {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+
+/* Container for all content */
+
+@media (max-width: 430px) {
+.container-mobile {
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 2rem;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: #cfc7d3; /* กำหนดสีพื้นหลัง */
+  height: auto; /* เพื่อให้ container ครอบคลุมหน้าจอแบบพอดี */
+}
+
+/* Header */
+.header {
+  background-color: #003c81;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.header .title {
+  color: white;
+  font-size: 20px;
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+  background-color: #e5eefc;
+  padding: 10px;
+  font-size: 14px;
+  color: #003c81;
+  border-left: 2px solid #003c81;
+}
+
+/* Info Box */
+.content {
+  background-color: #d7e2dc;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.info-box h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.info-box strong {
+  display: inline-block;
+  width: 160px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.cancel {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.btn.save {
+  background-color: #007bff;
+  color: white;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.details {
+  margin: 2rem;
+  color: #003c81;
+}
+
+/* Labels and Data */
+.info-row strong {
+   /*p Width of the label */
+  padding: 0.5rem;
+  font-size: 12px;
+  font-family: Roboto;
+}
+
+.info-row span {
+  flex-basis: 55%;
+  font-size: 12px; 
+  font-family: Roboto;
+   /* Align data to the right */
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 0.7rem;
+}
+
+#red {
+  background-color: #ffffff;
+  border: 1px solid #ff0000;
+  color: #de3535;
+  width: 150px;
+}
+
+#blue {
+  background-color: #ffffff;
+  border: 1px solid #3c00ff;
+  color: #4000ff;
+  width: 150px;
+}
+
+.footer {
+  background-color: #ffffff; /* สีพื้นหลังของ footer */
+  color: rgb(167, 0, 0); /* สีข้อความ */
+  border: 1px solid #000000;
+  padding: 10px;
+  font-size: small;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin-top: 8.4%;
+}
+
+}
+/* Responsive adjustments for small screens */
+
+/* Responsive for 430px */
